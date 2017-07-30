@@ -32,8 +32,8 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 		hours: '12 Noon to 1 AM (Mon-Sun)',
 		image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg',
 		bestDish: {
-			name: 'Corn Pizza',
-			image: 'http://www.hindimeaning.com/pictures/fruits/banana.jpg?x4766'
+			name: 'Keema Paratha',
+			image: 'http://zaiqatv.com.pk/wp-content/uploads/2016/02/Bhuna_Keema__Paratha_Recipe_xkqod_Pak101dotcom.jpg'
 		}
 	},
 	{
@@ -46,7 +46,11 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 		cost: '1600',
 		id:2,
 		hours: '12 Noon to 3 PM, 7 PM to 11 PM (Mon-Sun)',
-		image: 'https://b.zmtcdn.com/data/pictures/chains/2/1212/3a128bead1bf42c1d5254078c39d75a2_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A'
+		image: 'https://b.zmtcdn.com/data/pictures/chains/2/1212/3a128bead1bf42c1d5254078c39d75a2_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A',
+		bestDish: {
+			name: 'Malai Kulfi',
+			image: 'https://media-cdn.tripadvisor.com/media/photo-s/07/a8/91/4d/barbeque-nation.jpg'
+		}
 	},
 	{
 		name: 'Too Indian',
@@ -60,8 +64,8 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 		hours: '12 Noon to 1 AM (Mon-Sun)',
 		image: 'https://b.zmtcdn.com/data/pictures/1/18523131/8d32cb2ec40b6cd1ba8eabc19f69e1fc_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A',
 		bestDish: {
-			name: 'Spinach Dimsums',
-			image: 'http://finedininglovers.cdn.crosscast-system.com/BlogPost/l_3377_StockFood-00193424cut.jpg'
+			name: ' Nutella Shake',
+			image: 'http://cdn.shopify.com/s/files/1/1100/2012/articles/brownieshake4_1024x1024.jpg?v=1487172206'
 		}
 	},
 	{
@@ -74,7 +78,11 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 		cost: '1500',
 		id:4,
 		hours: '12 Noon to 12 Midnight (Mon-Sun)',
-		image: 'https://b.zmtcdn.com/data/pictures/7/18418277/eae0f676813dbe85bdb9718b76841e4f_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A'
+		image: 'https://b.zmtcdn.com/data/pictures/7/18418277/eae0f676813dbe85bdb9718b76841e4f_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A',
+	bestDish: {
+			name: 'Butter Chicken',
+			image: 'http://3.bp.blogspot.com/-ZQa0nZrqqdM/VXMGQhRe-FI/AAAAAAAADU4/xHX8YF7WCwU/s1600/4.JPG'
+		}
 	},
 	{
 		name: 'Summer House Cafe',
@@ -86,7 +94,11 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 		cost: '1800',
 		id:5,
 		hours: '12 Noon to 12:30 AM (Mon-Sun)',
-		image: 'https://b.zmtcdn.com/data/pictures/0/307490/e00bae6487490c53d94f6bf18aa85a62_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A'
+		image: 'https://b.zmtcdn.com/data/pictures/0/307490/e00bae6487490c53d94f6bf18aa85a62_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A',
+		bestDish: {
+					name: 'Pasta',
+					image: 'http://www.themarkolympia.com/restaurant/wp-content/uploads/2012/08/IMG_2717.jpg'
+				}
 	},
 	{
 		name: 'Bengali Sweet Centre',
@@ -98,7 +110,11 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 		cost: '500',
 		id:6,
 		hours: '9 AM to 11 PM (Mon-Sun)',
-		image: 'https://b.zmtcdn.com/data/pictures/7/757/9e9105077e4ee33351e07682c4d092e9_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A'
+		image: 'https://b.zmtcdn.com/data/pictures/7/757/9e9105077e4ee33351e07682c4d092e9_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A',
+		bestDish: {
+					name: 'Gulab Jamun',
+					image: 'https://blueoconnor.files.wordpress.com/2015/06/img_1369.jpg'
+				}
 	},
 	{
 		name: 'QD Restaurant',
@@ -110,7 +126,11 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 		cost: '800',
 		id:7,
 		hours: '11:30 AM to 11 PM (Mon-Sun)',
-		image: 'https://b.zmtcdn.com/data/pictures/5/4825/0c86059a350dc92118c344975d328ac9_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A'
+		image: 'https://b.zmtcdn.com/data/pictures/5/4825/0c86059a350dc92118c344975d328ac9_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A',
+		bestDish: {
+					name: 'Monster Shake',
+					image: 'http://cdn.newsapi.com.au/image/v1/5e686af2f4ac2890ca04e8dead05894c?width=650'
+				}
 	}];
 	$scope.restaurant = restaurants[$routeParams.id - 1];
 	$scope.getIngredients = function(url) {
