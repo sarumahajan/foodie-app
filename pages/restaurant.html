@@ -58,12 +58,15 @@
             <div><small>Cuisines:</small></div>
             <div><small>Cost for Two: </small></div>
             <div><small>Hours:</small></div>
+
         </div>
         <div class="value">
            <div>{{restaurant.cuisines}}</div>
            <div>₹{{restaurant.cost | number}}</div>
            <div>{{restaurant.hours}}</div>
+<div class="type1"><small>People Love Here:</small></div>
            <div class="bestDish" ng-if="restaurant.bestDish">
+
              <!--------best dish of restaurant--------->
             <span>{{restaurant.bestDish.name}} </span>
             <div ng-click="flag=!flag" class="button">Show Image</div>
