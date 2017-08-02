@@ -15,7 +15,7 @@ body {
 .hero {
   /*-----------background-image: url('https://anandipaliwal.files.wordpress.com/2015/06/food-table-relisted.jpg');---------*/
 margin-top:-21px;
-    min-height: 405px;
+    min-height: 390px;
     border-radius: 4px;
     color: white;
     font-size: 36px;
@@ -28,7 +28,7 @@ margin-top:-21px;
 
     position:relative;
     top:270px;
-    left:490px;
+    left:450px;
     font-weight: 100;
 
 }
