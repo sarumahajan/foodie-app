@@ -14,6 +14,10 @@ foodieApp.config(function ($routeProvider) {
 		templateUrl: 'pages/restaurant.html',
 		controller: 'restaurantController'
 	})
+	.when('/about',{
+		templateUrl: 'pages/about.html',
+		controller: 'aboutController'
+	})
 })
 
 
@@ -35,6 +39,8 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 			name: 'Keema Paratha',
 			image: 'http://zaiqatv.com.pk/wp-content/uploads/2016/02/Bhuna_Keema__Paratha_Recipe_xkqod_Pak101dotcom.jpg'
 		}
+
+
 	},
 	{
 		name: 'Barbeque Nation',
@@ -166,6 +172,7 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 			prob_value= $scope.probabilityvalue;
 			var elements = prob_value.filter(function(a){return a > 0.85;});
 			ing_list.splice(elements.length,20);
+
 			var nonveg = ["egg","meat","bacon","chicken","sushi","pork","steak"];
 			var additionnonveg = "<div><img src='http://21425-presscdn.pagely.netdna-cdn.com/wp-content/uploads/2013/05/non-veg-300x259.jpg' class='vegnonveg' ></div>"
 			var additionveg = "<div><img src='http://21425-presscdn.pagely.netdna-cdn.com/wp-content/uploads/2013/05/veg-300x259.jpg' class='vegnonveg' ></div>"
@@ -224,7 +231,10 @@ $scope.restaurants = [{
 	cost: '2200',
 	id:1,
 	hours: '12 Noon to 1 AM (Mon-Sun)',
-	image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+	image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg',
+	votes:'2251',
+ 	reviews:'1748 ',
+ 	order: '50min Rs.200',
 },
 {
 	name: 'Barbeque Nation',
@@ -236,6 +246,9 @@ $scope.restaurants = [{
 	cost: '1600',
 	id:2,
 	hours: '12 Noon to 3 PM, 7 PM to 11 PM (Mon-Sun)',
+	votes:'3291',
+ 	reviews:'1509',
+ 	order: '40min Rs.350',
 	image: 'https://b.zmtcdn.com/data/pictures/chains/2/1212/3a128bead1bf42c1d5254078c39d75a2_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A'
 },
 {
@@ -248,6 +261,9 @@ $scope.restaurants = [{
 	cost: '1200',
 	id:3,
 	hours: '12 Noon to 1 AM (Mon-Sun)',
+	votes:'365',
+ 	reviews:'360',
+ 	order: '80min Rs.260',
 	image: 'https://b.zmtcdn.com/data/pictures/1/18523131/8d32cb2ec40b6cd1ba8eabc19f69e1fc_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A'
 },
 {
@@ -260,6 +276,9 @@ $scope.restaurants = [{
 	cost: '1500',
 	id:4,
 	hours: '12 Noon to 12 Midnight (Mon-Sun)',
+	votes:'302',
+ 	reviews:'248',
+ 	order: '60min Rs.300',
 	image: 'https://b.zmtcdn.com/data/pictures/7/18418277/eae0f676813dbe85bdb9718b76841e4f_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A'
 },
 {
@@ -272,6 +291,9 @@ $scope.restaurants = [{
 	cost: '1800',
 	id:5,
 	hours: '12 Noon to 12:30 AM (Mon-Sun)',
+	votes:'2000',
+ 	reviews:'2000',
+ 	order: '90min Rs.390',
 	image: 'https://b.zmtcdn.com/data/pictures/0/307490/e00bae6487490c53d94f6bf18aa85a62_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A'
 },
 {
@@ -284,6 +306,9 @@ $scope.restaurants = [{
 	cost: '500',
 	id:6,
 	hours: '9 AM to 11 PM (Mon-Sun)',
+	votes:'875',
+ 	reviews:'677',
+ 	order: '30min Rs.150',
 	image: 'https://b.zmtcdn.com/data/pictures/7/757/9e9105077e4ee33351e07682c4d092e9_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A'
 },
 {
@@ -296,6 +321,9 @@ $scope.restaurants = [{
 	cost: '800',
 	id:7,
 	hours: '11:30 AM to 11 PM (Mon-Sun)',
+	votes:'592',
+ 	reviews:'256',
+ 	order: '70min Rs.270',
 	image: 'https://b.zmtcdn.com/data/pictures/5/4825/0c86059a350dc92118c344975d328ac9_featured_v2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A'
 }];
 

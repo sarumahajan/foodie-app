@@ -1,5 +1,7 @@
 <!--<h1>Show Restaurant {{restaurantId}} details here</h1>-->
+
 <div class="restaurant" ng-if="restaurant.name" ng-controller="restaurantController">
+
     <div class="rest-wrapper">
         <div class="image">
             <img src="{{restaurant.image}}" height="100" width="100">
@@ -33,11 +35,12 @@
             <span>{{restaurant.bestDish.name}} </span>
             <div ng-click="flag=!flag" class="button">Show Image</div>
             <div ng-show="flag">
-              <ul class="list-buttons">
-                <li style="padding : 10px 0; display:inline-block;"><div ng-click="getIngredients(restaurant.bestDish.image)" class="button">Get Ingredients</div></li>
-              <li style="padding : 10px 0; display:inline-block;"><div ng-click="checkVegorNonVeg()" class="button">Get Veg or nv</div></li>
-              </ul>
               <img ng-src="{{restaurant.bestDish.image}}" style="margin-top: 30px;width:300px; height:200px;">
+              <ul class="list-buttons">
+                <li style="padding : 10px 0; display:inline-block;"><div ng-click="getIngredients(restaurant.bestDish.image)"class="button">Get Ingredients</div></li>
+              <li style="padding : 10px 0; display:inline-block;"><div ng-click="checkVegorNonVeg()" class="button">Get Veg or Non-Veg</div></li>
+              </ul>
+
            </div>
         </div>
        </div>

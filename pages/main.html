@@ -17,7 +17,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                       <li><a href="#!/home">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#!/about">About</a></li>
                         <li><a href="#">Order Online</a></li>
                         <li><a href="#!/">Logout</a></li>
                     </ul>
@@ -36,7 +36,7 @@
 <div class="search-bar">
 <form>
 <div class="input-wrapper">
-<input type="text" class="form-control fm" placeholder="Search..."   ng-model="query">
+<input type="text" class="form-control" placeholder="Search..."   ng-model="query">
 </div>
 <button type="submit" class="btn btn-default  btn-clr">Search</button>
 </form>
@@ -76,6 +76,24 @@
     <div class="rating">
         <strong>{{restaurant.vote}}</strong>
     </div>
+    <!---------------------------------------reviews nd votes----------------------->
+<div class="voting">
+<div><small> {{restaurant.votes}} Votes </small></div>
+<div class="reviews"><small>{{restaurant.reviews}} Reviews</small></div>
+  </div>
+<!----------------------------add  list and order of the table menu------------------------->
+<ul class="nav nav-pills order">
+  <li role="presentation" >
+     <a  href="#"><i class="fa fa-phone" aria-hidden="true"></i><strong> Call</strong></a></li>
+  <li role="presentation">
+     <a href="#"><i class="fa fa-file-text" aria-hidden="true"></i><strong> View Menu</strong></a></li>
+  <li role="presentation">
+     <a href="#"><img  class="icon " src="https://www.shareicon.net/data/128x128/2015/10/08/652869_commerce_512x512.png"> <strong class="order-now"> Order Now</strong></a></li>
+ <div class= "price"><small>{{restaurant.order}}</small></div>
+  <li role="presentation">
+     <a href="#"><i class="fa fa-table book" aria-hidden="true"></i><strong class="book"> Book a Table</strong></a></li>
+</ul>
+
 </div>
         </div>
     </div>

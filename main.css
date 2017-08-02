@@ -14,8 +14,8 @@ body {
 
 .hero {
   /*-----------background-image: url('https://anandipaliwal.files.wordpress.com/2015/06/food-table-relisted.jpg');---------*/
-
-    min-height: 300px;
+margin-top:-21px;
+    min-height: 405px;
     border-radius: 4px;
     color: white;
     font-size: 36px;
@@ -27,15 +27,83 @@ body {
 .hero p {
 
     position:relative;
-    top:170px;
-    left:270px;
+    top:270px;
+    left:490px;
     font-weight: 100;
 
 }
+.about{
+
+  background-image: url("http://cdn-image.travelandleisure.com/sites/default/files/styles/tnl_redesign_article_landing_page/public/foodie0315-philadelphia.jpg?itok=sV1IN9FY");
+  background-size: cover;
+
+}
+.about p {
+
+  position:relative;
+  top:-20px;
+  left:-20px;
+color:white;
+font-size:45px;
+
+
+}
+.about-details{
+  width:50%;
+  margin:0 auto;
+}
+.restaurant .voting {
+	font-size:14px;
+	position: absolute;
+     top: 4.8rem;
+     right: 1.2rem;
+	color: #89959B;
+}
+.restaurant .reviews
+{
+	margin-top:-7px;
+}
+.order.nav>li>a{
+	position:relative;
+	display:block;
+	border-left:0!important;
+	border-right:0!important;
+	border:1px solid #e7e7e7;
+	border-radius:0%;
+    padding:  15px 30px  ;
+    margin:-1px;
+    text-align: center;
+	color: #333;
+
+}
+.book{
+	color: #00aacd!important;
+}
+.order-now{
+    color: #5BA829;
+}
+.icon{
+	height:15px;
+	width:15px;
+
+}
+.price
+{
+	font-size:14px;
+	position:absolute;
+    margin-left: 300px;
+	color:#3C3D3F;
+	margin-right:17px;
+	margin-top:28px;
+}
+
+
+
 
 #app .navbar {
     color: white;
     background-color: #cb202d;
+
 }
 
 #app .navbar a {
@@ -163,7 +231,7 @@ input.ng-invalid.ng-dirty {
 }
 .ui{
 
-    width:80%;
+    width:100%;
     padding:0;
 
 }
