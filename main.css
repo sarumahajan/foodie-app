@@ -115,9 +115,11 @@ font-size:45px;
 }
 
 #app .login {
-    background-color: #cb202d;
+    background-image: url("https://cdn.vox-cdn.com/thumbor/141CD-t0HOh8qEcNqhoYIs6Bs4w=/0x0:1820x1213/1200x800/filters:focal(759x305:1049x595)/cdn.vox-cdn.com/uploads/chorus_image/image/54470237/DizenGoff24574_LoRes_smaller.1493246682.1493291215.jpg");
+    background-position: center;
+    background-size: cover;
     height: 100vh;
-    min-height: 500px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,18 +130,29 @@ font-size:45px;
     width: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    color:black;
     padding: 1rem;
     padding-top: 0;
     border-radius: 4px;
+font-size:18px;
 }
 input.ng-invalid.ng-dirty {
             border: 1px solid red;
+
         }
 		.hero {
     margin-bottom: 2rem;
 }
-
+.form-control{
+  color:black!important;
+  font-size:20px;
+}
+.input{
+  background-color:transparent;
+}
+.input::placeholder{
+  color:white;
+}
 .restaurant {
     background-color: white;
     position: relative;
