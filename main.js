@@ -1,5 +1,7 @@
 var foodieApp = angular.module('foodieApp',['ngRoute']);
+// console.log(foodieApp);
 
+//path given to diff page
 foodieApp.config(function ($routeProvider) {
 	$routeProvider
 	.when('/',{
@@ -20,10 +22,11 @@ foodieApp.config(function ($routeProvider) {
 	})
 })
 
-
+//controller bnaya hai resuntrant page ke liye
 foodieApp.controller('restaurantController',function($scope,$routeParams,$http) {
 	$scope.restaurantId = $routeParams.id;
 	console.log($routeParams.id);
+	//array of object for resuntrants
 	var restaurants =[{
 		name: 'Farzi Cafe',
 		address: '38/39, Level 1, Block E , Inner Circle, Connaught Place, New Delhi',
@@ -35,7 +38,7 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 		id:'1',
 		hours: '12 Noon to 1 AM (Mon-Sun)',
 		image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg',
-		bestDish: {
+		bestDish: {   //information about the recommended dish
 			name: 'Keema Paratha',
 			image: 'http://zaiqatv.com.pk/wp-content/uploads/2016/02/Bhuna_Keema__Paratha_Recipe_xkqod_Pak101dotcom.jpg'
 		}
@@ -138,7 +141,11 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 					image: 'http://cdn.newsapi.com.au/image/v1/5e686af2f4ac2890ca04e8dead05894c?width=650'
 				}
 	}];
+
 	$scope.restaurant = restaurants[$routeParams.id - 1];
+
+// this code is used to get the ingredients
+
 	$scope.getIngredients = function(url) {
 		var data = '{"inputs":[{"data":{"image":{"url":"' + url + '"}}}]}'
 		$http({
@@ -203,9 +210,12 @@ foodieApp.controller('loginController',function($scope,$location) {
 
 
 
-
+//controller for main page
 foodieApp.controller('mainController',function($scope) {
 //$scope.restaurants = ['Farzi Cafe','Pizza Hut','Wenger\'s Deli','Sagar Ratna'];
+
+
+//vegas slideshow
 $('.vegas').vegas({
 			slides:[
 			{ src:"http://goop.com/wp-content/uploads/2001/01/foodie-featured.jpg"},
@@ -220,7 +230,7 @@ $('.vegas').vegas({
 			],
 			animation:'kenburns'
 		});
-
+//arrayof object used to display diff restaurant in list
 $scope.restaurants = [{
 	name: 'Farzi Cafe',
 	address: '38/39, Level 1, Block E , Inner Circle, Connaught Place, New Delhi',

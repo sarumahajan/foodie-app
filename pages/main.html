@@ -1,6 +1,7 @@
 
 
     <div class="main"  ng-controller="mainController">
+      <!----------------------header------------------------->
         <nav class="navbar navbar-default navbar-fixed">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -33,6 +34,7 @@
             </div>
 
 </div>
+<!----------search bar------------------->
 <div class="search-bar">
 <form>
 <div class="input-wrapper">
@@ -44,18 +46,23 @@
             <div ng-repeat="restaurant in restaurants | filter:query" class="restaurant">
     <div class="rest-wrapper">
         <div class="image">
+          <!--------image of restaurant--------->
             <img src="{{restaurant.image}}" height="100" width="100">
         </div>
         <div class="rest-info">
             <div class="rest-category">
+              <!--------category of restaurant--------->
                <small>{{restaurant.category}} </small>
             </div>
+              <!--------name of restaurant--------->
             <div class="rest-name">
             <a ng-href="#!/restaurant/{{restaurant.id}}"><strong>{{restaurant.name}}</strong></a>
             </div>
             <div>
+              <!--------location of restaurant--------->
                <strong> {{restaurant.location}}</strong>
             </div>
+              <!--------address of restaurant--------->
             <div class="rest-address">
                 {{restaurant.address}}
             </div>
@@ -63,6 +70,7 @@
     </div>
     <div class="rest-extra">
         <div class="type">
+            <!--------details of restaurant--------->
             <div><small>Cuisines:</small></div>
             <div><small>Cost for Two: </small></div>
             <div><small>Hours:</small></div>
